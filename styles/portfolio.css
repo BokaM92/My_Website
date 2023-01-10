@@ -1,0 +1,93 @@
+#portfolio {
+  padding: 0 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+
+.title h1 {
+  font-size: 55px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.title h1 span {
+  color: #85afe0;
+}
+
+.title p {
+  display: inline-block;
+  position: relative;
+  padding: 0 40px;
+}
+
+.title p::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #85afe0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title p::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #85afe0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-auto-flow: dense;
+  gap: 25px;
+}
+
+.gallery-item {
+  padding: 5px;
+  border: 1px solid #85afe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d3ecec;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+}
+
+.text-content {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.text-content h3 {
+  margin: 10px 0;
+}
+
+.text-content ul li {
+  margin-bottom: 15px;
+}
+
+.text-content .btn {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 40px;
+  }
+}
